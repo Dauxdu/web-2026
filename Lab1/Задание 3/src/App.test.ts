@@ -6,6 +6,7 @@ let browser: Browser;
 
 beforeAll(async () => {
     browser = await puppeteer.launch({
+        executablePath: '/usr/bin/chromium',
         args: ['--no-sandbox'],
     });
 });
